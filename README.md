@@ -1,3 +1,3 @@
-# Lab 2 - Starter
-https://github.com/adesens/Lab2_Starter
+# Lab 3
+adesens.github.io/fa22-cse110-lab3
 
