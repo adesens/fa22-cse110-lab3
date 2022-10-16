@@ -1,4 +1,5 @@
 # Daily Standup Meeting Notes
+October 16, 2022
 
 ### What did I work on yesterday?
 *Share the progress on the sprint goals.*
