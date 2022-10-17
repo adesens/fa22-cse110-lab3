@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team One Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="puzzle.jpg">
   </head>
   <body>
-    <header>
-        <div>Meeting Minutes</div>
+    <header class="stickyPositioning">
+        <div class="navLinks">Meeting Minutes</div>
         <nav>
             <a href="#attendanceList">Attendance List</a>
             <a href="#agenda">Agenda</a>
@@ -22,21 +23,27 @@
     <br>
 
     <main>
-        <h1>Team One First Meeting Minutes</h1>
-        <h2>Getting to know each other</h2>
+        <style>
+            span {
+                background:lightblue;
+                display:inline;
+            }
+        </style>
+        <h1 style="text-shadow: 2px 1px #3077D9">Team One First Meeting Minutes</h1>
+        <h2 id="header2">Getting to know each other</h2>
         <h4><i>Wednesday, October 5th, 2022</i></h4>
 
-        <img
-            src="teamMeeting.jpg"
+        <img class="staticPositioning"
+            src="teamMeeting.png"
             alt="teamMeeting"
-            width="400"
         >
 
         <br>
 
-        <section>
+        <section class="boxOne">
             <h3 id="attendanceList">Attendance List</h3>
             <h4>Attended</h4>
+            <p>People who attended the meeting</p>
             <ol>
                 <li>Aleksandra (Ola) Desens</li>
                 <li>Stanley Alexander Woo</li>
@@ -47,6 +54,8 @@
                 <li>Zichen (Ash) Zhou</li>
             </ol>
             <h4>Missing</h4>
+            <p>People who missed the meeting</p>
+            <p>People who were excused from the meeting</p>
             <ol>
                 <li>Alf Berger Husem</li>
                 <li>Pratham Mittal</li>
@@ -54,10 +63,11 @@
             </ol>
         </section>
 
-        <hr>
+        <br>
 
-        <section>
+        <section class="boxTwo">
             <h3 id="agenda">Agenda</h3>
+            <p>Plans for this meeting</p>
             <input type="checkbox"> Group bonding: <span style="color:blue">JackBox</span><br>
             <input type="checkbox"> Short introductions<br>
             <input type="checkbox"> Group page and video<br>
@@ -67,9 +77,9 @@
             <input type="checkbox"> Group contract<br>
         </section>
 
-        <hr>
+        <br>
 
-        <section>
+        <section class="boxThree">
             <h3 id="unfinishedBusiness">Unfinished Business</h3>
             <ul>
                 <li>When2Meet
@@ -85,9 +95,9 @@
             </ul>
         </section>
 
-        <hr>
+        <br>
 
-        <section>
+        <section class="boxThree">
         <h3 id="newBusiness">New Business</h3>
             <ul>
                 <li>Team bonding: <i>JackBox</i>
@@ -128,7 +138,7 @@
             </ul>
         </section>
 
-        <hr>
+        <br>
 
         <section>
             <h3 id="commentsQuestionsConcerns">Comments - Questions - Concerns</h3>
@@ -146,7 +156,7 @@
             </details><br>
         </section>
 
-        <hr>
+        <br>
 
         <section>
             <h3 id="other">Other</h3>
@@ -176,6 +186,12 @@
     <br><br>
 
     <footer>
+        <style>
+            * {
+              text-align: left;
+              color: #324A73;
+            }
+        </style>
         <h4 id="subscribe">Subscribe</h4>
         <p>Before you go, <strong>subscribe</strong> and never miss a thing</p>
 
@@ -202,7 +218,7 @@
 
         <form onsubmit="alert('Subscribed')">
             <input type="text" placeholder="Enter your email address" size="50">
-            <button>Submit</button><br><br>
+            <button class="button">Submit</button><br><br>
 
             <div>Written by Aleksandra Desens</div>
         </form>

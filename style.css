@@ -1,0 +1,146 @@
+body {
+    background-color: snow;
+    color: #324A73;
+    margin-left: 30px;
+    display: block;
+}
+
+/* Custom font */
+@font-face {
+    font-family: "Lobster";
+    src: url(Lobster-Regular.ttf);
+}
+
+/* Headers */
+h1 {
+    color: rgb(28, 81, 155);
+    font-family: "Lobster";
+}
+
+h2 {
+    color: #1c519b;
+}
+
+#header2 {
+    color: #324A73;
+}
+
+h3, h4 {
+    color: hsl(215, 69%, 52%);
+}
+
+/* Combinators */
+h4 + p {
+    color: #FF6978;
+}
+
+h4 ~ p {
+    color: #FF6978;
+}
+
+section > p {
+    font-weight: bold;
+}
+
+section h3 {
+    color: #FF6978;
+}
+
+a {
+    color: #324A73;
+}
+
+a[href^="#"] {
+    background-color: #FF6978;
+  }
+
+/* Responsiveness */
+@media screen and (min-width: 1200px){
+    img {
+        height: 320px;
+        width: 500px;
+    }
+}
+
+/* Navigation Links */
+.navLinks {
+    color: #3077D9;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.stickyPositioning {
+    position: sticky;
+    top: 10px;
+}
+
+.staticPositioning {
+    position: static;
+}
+
+.boxOne {
+    margin-top: 5px;
+    margin-right: 0.05in;
+    margin-bottom: 1ex;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    border-style: solid;
+    border-color: #324A73;
+    border-width: 0.7mm;
+    border-radius: 20px;
+    max-width: 70rem;
+    min-width: 40rem;
+}
+
+.boxTwo {
+    margin: 5px 0.0.5in 5px 0px;
+    padding: 5px 15px 20px 15px;
+    border-style: solid;
+    border-color: #324A73;
+    border-width: 0.7mm;
+    border-radius: 20px;
+    max-width: 70rem;
+    min-width: 40rem;
+}
+
+.boxThree {
+    margin: auto;
+    padding: 5px 15px 20px 15px;
+    border-style: solid;
+    border-color: #324A73;
+    border-width: 0.7mm;
+    border-radius: 20px;
+    max-width: 70rem;
+    min-width: 40rem;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: #84a0c8;
+    }
+}
+
+.button:active {
+    background-color: #84a0c8
+}
+
+:active {
+    box-shadow: 2px 2px 5px #324A73;
+}
+
+:hover {
+    transition: 0.7s;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
